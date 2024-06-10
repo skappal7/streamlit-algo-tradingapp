@@ -2,9 +2,9 @@ import alpaca_trade_api as tradeapi
 import pandas as pd
 import streamlit as st
 
-API_KEY = st.secrets["API_KEY"]
-SECRET_KEY = st.secrets["SECRET_KEY"]
-BASE_URL = st.secrets["BASE_URL"]
+API_KEY = st.secrets["api"]["API_KEY"]
+SECRET_KEY = st.secrets["api"]["SECRET_KEY"]
+BASE_URL = st.secrets["api"]["BASE_URL"]
 
 api = tradeapi.REST(API_KEY, SECRET_KEY, BASE_URL, api_version='v2')
 
