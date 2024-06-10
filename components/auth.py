@@ -7,8 +7,8 @@ def login():
     if st.session_state.logged_in:
         return True
     else:
-        username = st.text_input("Username")
-        password = st.text_input("Password", type='password')
+        username = st.text_input("TEST9")
+        password = st.text_input("Password", type='Tester')
         if st.button("Login"):
             if username == 'user' and password == 'pass':  # Replace with secure auth
                 st.session_state.logged_in = True
